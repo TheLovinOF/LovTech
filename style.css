@@ -52,6 +52,9 @@ body {
     filter: blur(80px);
     z-index: -2;
     animation: float 20s infinite alternate ease-in-out;
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 }
 
 .orb-1 {
@@ -98,15 +101,15 @@ body {
 
 @keyframes float {
     0% {
-        transform: translate(0, 0) scale(1);
+        transform: translate3d(0, 0, 0) scale(1);
     }
 
     50% {
-        transform: translate(50px, 30px) scale(1.1);
+        transform: translate3d(50px, 30px, 0) scale(1.1);
     }
 
     100% {
-        transform: translate(-30px, -50px) scale(0.9);
+        transform: translate3d(-30px, -50px, 0) scale(0.9);
     }
 }
 
@@ -206,7 +209,7 @@ p {
     position: fixed;
     top: 20px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
     width: 90%;
     max-width: 1200px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
@@ -218,6 +221,7 @@ p {
     z-index: 1000;
     padding: 15px 30px;
     box-shadow: var(--glass-shadow);
+    will-change: backdrop-filter, transform;
 }
 
 .nav-container {
@@ -268,6 +272,8 @@ p {
     border-radius: 24px;
     box-shadow: var(--glass-shadow);
     padding: 40px;
+    transform: translateZ(0);
+    /* Force GPU layer */
 }
 
 /* Interactive Card Base */
@@ -303,7 +309,8 @@ p {
 }
 
 .interactive-card:hover {
-    transform: translateY(-5px);
+    transform: translate3d(0, -5px, 0);
+    /* Force GPU rendering */
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 0, 84, 0.2);
     border-color: var(--glass-border-light);
 }
@@ -321,6 +328,8 @@ p {
     transition: opacity 0.3s;
     pointer-events: none;
     z-index: 1;
+    will-change: opacity, background;
+    /* Hardware optimization for JS updates */
 }
 
 .interactive-card:hover .card-glare {
@@ -375,9 +384,11 @@ main {
 .main-card {
     width: 100%;
     max-width: 400px;
-    transform: rotateY(-10deg) rotateX(10deg);
+    transform: rotateY(-10deg) rotateX(10deg) translateZ(0);
+    /* Force GPU layer */
     transform-style: preserve-3d;
     box-shadow: -20px 20px 30px rgba(0, 0, 0, 0.4);
+    will-change: transform;
 }
 
 .hero-visual:hover .main-card {
