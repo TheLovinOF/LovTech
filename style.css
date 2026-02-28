@@ -29,15 +29,18 @@
 }
 
 html {
-    zoom: 0.9;
-    /* Scale down by 10% */
+    overflow-x: hidden;
 }
 
 body {
+    zoom: 0.9;
+    width: calc(100vw / 0.9);
+    min-height: calc(100vh / 0.9);
     background-color: var(--bg-base);
     color: var(--text-main);
     overflow-x: hidden;
     line-height: 1.6;
+    margin: 0 auto;
 }
 
 /* -----------------------------
@@ -628,8 +631,8 @@ main {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: calc(100vw / 0.9);
+    height: calc(100vh / 0.9);
     background: transparent;
     /* Changed to transparent to show site background */
     z-index: 9999;
