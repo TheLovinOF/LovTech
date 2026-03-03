@@ -94,11 +94,22 @@ body {
     background-image:
         url('waves.svg'),
         linear-gradient(135deg, #5a000a 0%, #000000 80%);
-    background-size: 100% 400px, cover;
-    background-position: top center, center;
-    background-repeat: no-repeat, no-repeat;
+    background-size: 2000px 400px, cover;
+    background-position: 0px 0px, center;
+    background-repeat: repeat-x, no-repeat;
     z-index: -1;
     opacity: 1;
+    animation: waveAdvance 30s linear infinite;
+}
+
+@keyframes waveAdvance {
+    0% {
+        background-position: 0px 0px, center;
+    }
+
+    100% {
+        background-position: 2000px 0px, center;
+    }
 }
 
 @keyframes float {
