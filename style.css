@@ -1,6 +1,6 @@
 :root {
     /* Color Palette - Vibrant Pink/Red inspired theme */
-    --bg-base: #0a0a1a;
+    --bg-base: #000000;
     --primary-blue: #FF001E;
     --primary-purple: #ff334b;
     --secondary-cyan: #FF001E;
@@ -90,13 +90,15 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    background-color: #030000;
     background-image:
-        radial-gradient(at 40% 20%, rgba(40, 0, 20, 0.5) 0px, transparent 50%),
-        radial-gradient(at 80% 0%, rgba(255, 0, 30, 0.5) 0px, transparent 50%),
-        radial-gradient(at 0% 50%, rgba(255, 51, 75, 0.4) 0px, transparent 50%),
-        radial-gradient(at 80% 50%, rgba(255, 0, 30, 0.3) 0px, transparent 50%);
+        url('waves.svg'),
+        linear-gradient(135deg, #5a000a 0%, #000000 80%);
+    background-size: 100% 400px, cover;
+    background-position: top center, center;
+    background-repeat: no-repeat, no-repeat;
     z-index: -1;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 @keyframes float {

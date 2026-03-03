@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <!-- Multiple thin cubic bezier waves to simulate topographic contour lines -->
+    <!-- Opacity fades as they go down -->
+    <!-- Base Wave 1 -->
+    <path d="M0,32 C288,100 576,10 864,64 C1152,118 1300,50 1440,32" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1" />
+    <!-- Base Wave 2 -->
+    <path d="M0,45 C288,113 576,23 864,77 C1152,131 1300,63 1440,45" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1" />
+    <!-- Base Wave 3 -->
+    <path d="M0,58 C288,126 576,36 864,90 C1152,144 1300,76 1440,58" fill="none" stroke="rgba(255,255,255,0.20)" stroke-width="1" />
+    <!-- Base Wave 4 -->
+    <path d="M0,71 C288,139 576,49 864,103 C1152,157 1300,89 1440,71" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1" />
+    <!-- Base Wave 5 -->
+    <path d="M0,84 C288,152 576,62 864,116 C1152,170 1300,102 1440,84" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="1" />
+    <!-- Base Wave 6 -->
+    <path d="M0,97 C288,165 576,75 864,129 C1152,183 1300,115 1440,97" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="1" />
+    <!-- Base Wave 7 -->
+    <path d="M0,110 C288,178 576,88 864,142 C1152,196 1300,128 1440,110" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
+    <!-- Base Wave 8 -->
+    <path d="M0,123 C288,191 576,101 864,155 C1152,209 1300,141 1440,123" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="1" />
+    <!-- Base Wave 9 -->
+    <path d="M0,136 C288,204 576,114 864,168 C1152,222 1300,154 1440,136" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+    <!-- Base Wave 10 -->
+    <path d="M0,149 C288,217 576,127 864,181 C1152,235 1300,167 1440,149" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+    <!-- Base Wave 11 -->
+    <path d="M0,162 C288,230 576,140 864,194 C1152,248 1300,180 1440,162" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1" />
+    <!-- Base Wave 12 -->
+    <path d="M0,175 C288,243 576,153 864,207 C1152,261 1300,193 1440,175" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="1" />
+</svg>
